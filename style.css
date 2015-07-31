@@ -2,13 +2,227 @@
 
 * {
   box-sizing: border-box;
+  font-family: 'Work Sans', sans-serif;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-[class*='box-'] {
-  color: white;
-  font-size: 100px;
+/*[class*='partOfSelector'] {
+}*/
+
+h1, h2, h3, h4 {
+  margin: 0;
+  text-align: center
+}
+
+p {
+  margin: 0;
+  font-family: Palatino, 'Palatino Linotype',  'Palatino LT STD', 'Book Antiqua', Georgia, serif;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+html {
+  background: black;
+}
+
+.container {
+  margin: auto;
+  width: 375px;
+  background-color: #ECECEC;
+  margin-top: 91px;
+  padding-top: 27px;
+}
+
+.nav {
+  position: fixed;
+  width: 375px;
+  margin-top: -120px;
+}
+
+.top-bar {
+  width: 100%;
+  /*background-image: url(http://payload145.cargocollective.com/1/0/4181/5216133/Patterns_Brush1_900.jpg);*/
+  background-color: white;
+  background-size: 50%;
+  height: 50px;
+  border-bottom: 1px solid #D5D5D5;
+}
+
+.logo {
+  width: 10vw;
+  height: 60px;
+  line-height: 52px;
+  padding-left: 15px;
+  font-size: 30px;
+  font-weight: 500;
+  color: #2F2F2F;
+}
+
+.bottom-bar {
+  min-width: 100%;
+  height: 51px;
+  overflow-x: ;
+  background-color: white;
+  padding: 15px 15px;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.25);
+}
+
+.bottom-bar span {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+
+}
+
+.bottom-bar span:not(:nth-of-type(1)) {
+  padding-left: 20px;
+}
+
+.card {
+  width: 92%;
+  margin: auto;
+  box-shadow: 4px;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 1px 7px rgba(0, 0, 0, 0.12);
+  margin-top: 16px;
+}
+
+.img-container {
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+}
+
+.img-container img {
+  width: 100%;
+  margin-top: -20px;
+}
+
+.feature-card-content {
+  background-color: white;
+  padding: 15px;
+}
+
+.feature-card-content h3 {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 400;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #D5D5D5;
+  margin: 0 -15px;
+}
+
+.feature-card-content h1 {
+  font-size: 25px;
+  font-weight: 400;
+  width: 90%;
+  margin: auto;
+  padding: 14px;
+  padding-bottom: 4px;
+}
+
+.content-pane {
+  background-color: white;
+  margin-top: 15px;
+  padding-top: 20px;
+}
+
+.content-pane h3 {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 400;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #D5D5D5;
+  text-align: left;
+  padding-left: 4%;
+}
+
+.content-pane-article {
+  padding: 20px;
+  border-bottom: 1px solid #D5D5D5;
+  width: 90%;
+  margin: auto;
+  cursor: pointer;
+}
+
+.content-pane-article h2 {
+  padding-bottom: 10px;
+  font-weight: 400;
+}
+
+
+.content-pane-article p {
   text-align: center;
-  padding: 10px;
+  width: 85%;
+  margin: auto;
 }
 
 
+.text-button-green {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 500;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  border-bottom: 1px solid #D5D5D5;
+  cursor: pointer;
+  text-align: center;
+  color: #22B079;
+}
+
+.word-of-the-day h3 {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 10px 0;
+  border-bottom: 1px solid #D5D5D5;
+}
+
+.word-of-the-day h2 {
+  font-family: Palatino, 'Palatino Linotype',  'Palatino LT STD', 'Book Antiqua', Georgia, serif;
+  font-weight: 100;
+  font-style: italic;
+  font-size: 2rem;
+  margin-top: 10px
+}
+
+.word-of-the-day h3 span {
+  font-family: Palatino, 'Palatino Linotype',  'Palatino LT STD', 'Book Antiqua', Georgia, serif;
+  text-transform: lowercase;
+  font-style: italic;
+}
+
+.word-of-the-day p {
+  text-align: center;
+  padding: 13px 30px;
+}
+
+.search h3 {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 10px 0;
+  border-bottom: 1px solid #D5D5D5;
+}
+
+.search .inputs {
+  border-bottom: 1px solid black;
+  width: 80%;
+  margin: auto;
+  padding: 18px 0 4.6px 0;
+}
+
+.search .button {
+  padding: 10px 20px;
+  background-color: #BDBDBD;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  width: 40%;
+  margin-left: 50.7%;
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
